@@ -122,3 +122,46 @@
 //     return 0;
 // }
 
+//snippet 34
+// u_int16_t *secuencia(u_int16_t n){
+//     u_int16_t *arr = malloc(n*sizeof(u_int16_t));
+//     if(arr==NULL){
+//         return NULL;
+//     }
+//     for(u_int16_t i=0;i<n;i++){
+//         arr[i]=i;
+//         return arr;
+//     }
+// }
+
+// int main(){
+//     u_int16_t *arr = secuencia(10);
+//     if (arr == NULL){
+//         return 1;
+//     }
+//     for(u_int16_t i=0; i<n;i++){
+//         printf("%d\n",arr[i]);
+//     }
+//         free(arr);
+//         return 0;
+
+// }
+
+
+// typedef struct{
+//     char* nombre;
+//     int edad;
+// } persona_t;
+
+// persona_t* crearPersona(char* nombre, int edad){
+//     persona_t persona = {nombre, edad};
+//     persona_t *puntero = &persona;
+//     return puntero;
+// }
+
+int main(){
+    int num  =42;
+    int* p = &num;
+    int** x = &p;
+    printf("%d",*p);
+}
